@@ -38,8 +38,10 @@ urls = []
 # Function to open a Chrome browser instance
 def open_chrome_browser(mydata):
     
-    chrome_options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(options=chrome_options)
+    # chrome_options = webdriver.ChromeOptions()
+    # driver = webdriver.Chrome(options=chrome_options)
+    
+    driver = webdriver.Chrome()
     for j in mydata:        
         # Open the first URL in the first tab
         url = f"https://www.amazon.{j[3]}/dp/{j[2]}"
